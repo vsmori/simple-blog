@@ -10,6 +10,9 @@
         <div class="blog-post-hero" style="background-image: url({{ metadata.hero.imgix_url }})"></div>
       {{/ metadata.hero.imgix_url }}
       <div class="container">
+        <h2 class="blog__title">
+          <a href="/{{ slug }}">{{ title }}</a>
+        </h2>
         <div class="blog__content droid">{{{ content }}}</div>
         <div class="blog__tags">
           {{# metadata.categories }}
